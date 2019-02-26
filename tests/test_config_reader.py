@@ -36,7 +36,7 @@ class TestConfigReader(object):
 
     def test_config_reader_with_invalid_path(self):
         with pytest.raises(InvalidSceptreDirectoryError):
-            ConfigReader(SceptreContext("/path/does/not/exist", "example"))
+            ConfigReader(SceptreContext("/path/does/not/exist", "example", "example"))
 
     def create_project(self):
         """
